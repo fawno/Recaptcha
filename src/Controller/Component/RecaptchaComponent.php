@@ -21,11 +21,11 @@ class RecaptchaComponent extends Component
         // This is test only key/secret
         'sitekey' => '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
         'secret' => '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe',
-        'theme' => 'light',
-        'type' => 'image',
+        //'theme' => 'light',
+        //'type' => 'image',
         'enable' => true,
         'lang' => 'en',
-        'size' => 'normal',
+        //'size' => 'normal',
         'httpClientOptions' => [],
     ];
 
