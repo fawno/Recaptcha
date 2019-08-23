@@ -35,7 +35,10 @@ $this->loadComponent('Recaptcha.Recaptcha', [
     'type' => 'image',  // image/audio
     'theme' => 'light', // light/dark
     'lang' => 'vi',      // default en
-    'size' => 'normal'  // normal/compact
+    'size' => 'normal',  // normal/compact
+    'callback' => null,  // callback function,
+    'expired-callback' => null,  // expired callback function,
+    'error-callback' => null  // error callback function,
 ]);
 ```
 
@@ -54,7 +57,10 @@ file: config/app.php
         'type' => 'image',
         'theme' => 'light',
         'lang' => 'es',
-        'size' => 'normal'
+        'size' => 'normal',
+        'callback' => null,
+        'expired-callback' => null,
+        'error-callback' => null
     ]
 ```
 
@@ -76,7 +82,10 @@ return [
         'type' => 'image',
         'theme' => 'light',
         'lang' => 'es',
-        'size' => 'normal'
+        'size' => 'normal',
+        'callback' => null,
+        'expired-callback' => null,
+        'error-callback' => null
     ]
 ];
 ```

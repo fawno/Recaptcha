@@ -13,6 +13,9 @@ var CaptchaCallback = function() {
     data-theme="<?= $recaptcha['theme'] ?>"
     data-type="<?= $recaptcha['type'] ?>"
     data-size="<?= $recaptcha['size'] ?>"
+    <?php if (!empty($recaptcha['callback'])) : ?>data-callback="<?= $recaptcha['callback'] ?>"<?php endif; ?>
+    <?php if (!empty($recaptcha['expired-callback'])) : ?>data-expired-callback="<?= $recaptcha['expired-callback'] ?>"<?php endif; ?>
+    <?php if (!empty($recaptcha['error-callback'])) : ?>data-error-callback="<?= $recaptcha['error-callback'] ?>"<?php endif; ?>
     async defer>
 </div>
 <noscript>
